@@ -1,6 +1,7 @@
 import React from 'react'
 import { Hero, Navbar, Footer, Trustedby, FeaturesCard, UserTestimonial, Pricing, SignupCard, MoreBlog } from './components'
 import { sakura } from './assets/images';   
+// import { Parallax, ParallaxLayer } from 'react-spring';
 
 
 export default function Home() {
