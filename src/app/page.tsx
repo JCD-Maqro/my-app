@@ -71,7 +71,7 @@ export default function Home() {
     <Navbar />
     <div className='min-h-screen flex flex-col justify-center text-center items-center bg-bg3 bg-fixed bg-no-repeat bg-cover'>
       <Hero />
-      <div className='bg-slate-700 flex justify-center pb-12 mb-12 px-6'>
+      <div className='flex justify-center pb-12 mb-12 px-6'>
         <Trustedby />
       </div>
       <div className='bg-bg2 text-center bg-cover bg-fixed bg-no-repeat flex-col max-w-full p-6 sm:flex-row sm:flex-wrap sm:justify-center'>
