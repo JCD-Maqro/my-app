@@ -21,10 +21,9 @@
 }
 
 body {
-  background-image: url('assets/images/bg.jpg');
+  background-image: url('assets/images/bg3.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+  background-size: fit;
   /* color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,

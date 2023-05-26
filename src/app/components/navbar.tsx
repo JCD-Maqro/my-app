@@ -14,6 +14,10 @@ const Navbar = () => {
 
   const [nav, setNav] = useState(false);
   const [color, setColor] = useState('transparent');
+  const [textColor, setTextColor] = useState('white');
+  const handleNav = () => {
+    setNav(!nav);
+  };
 
   useEffect(() => {
     const changeColor = () => {

@@ -10,7 +10,7 @@ const Pricing: React.FC = () => {
     };
   
     return (
-      <section>
+      <section className='flex flex-wrap justify-center text-center'>
         <div className="my-12">
           <h5 className="lg:text-2xl m-3 font-bold text-white md:text-sm">Pricing</h5>
           <p className="lg:text-md mb-8 text-white md:text-sm">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>

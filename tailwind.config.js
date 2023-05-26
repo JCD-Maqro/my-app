@@ -9,9 +9,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        bg1: "url('/bg.jpg')",
+        bg2: "url('/bg2.jpg')",
+        bg3: "url('/bg3.jpg')",
+        bg4: "url('/bg4.jpg')",
       },
       screens: {
         xxs: "270px",
