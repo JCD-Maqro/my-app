@@ -70,9 +70,11 @@ export default function Home() {
     <div className='flex flex-col min-h-screen'>
     <Navbar />
     <div className='min-h-screen flex flex-col justify-center text-center items-center bg-bg3 bg-fixed bg-no-repeat bg-cover'>
-      <Hero />
-      <div className='flex justify-center pb-12 mb-12 px-6'>
-        <Trustedby />
+      <div className='bg-blossom bg-fixed bg-cover w-[90vw] h-screen'>
+        <Hero />
+        <div className='flex justify-center pb-12 mb-12 px-6'>
+          <Trustedby />
+        </div>
       </div>
       <div className='bg-bg2 text-center bg-cover bg-fixed bg-no-repeat flex-col max-w-full p-6 sm:flex-row sm:flex-wrap sm:justify-center'>
         <FeaturesCard title={"Feature 1"} image={sakura} content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."} isFlip={false}  />

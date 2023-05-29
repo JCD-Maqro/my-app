@@ -8,8 +8,10 @@ import sakura from './sakura-hero-img.jpg'
 import carousel1 from './carousel1.jpg'
 import carousel2 from './carousel2.jpg'
 import carousel3 from './carousel3.jpg'
+import blossoms from './cherryblossoms.webp'
 
 export{
+    blossoms,
     bg4,
     bg3,
     bg2,

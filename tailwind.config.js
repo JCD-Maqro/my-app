@@ -13,6 +13,8 @@ module.exports = {
         bg2: "url('/bg2.jpg')",
         bg3: "url('/bg3.jpg')",
         bg4: "url('/bg4.jpg')",
+        blossom: "url('/cherryblossoms.webp')",
+        halfmoon: "url('/half.png')",
       },
       screens: {
         xxs: "270px",
