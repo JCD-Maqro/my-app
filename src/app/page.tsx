@@ -70,9 +70,9 @@ export default function Home() {
     <div className='flex flex-col min-h-screen'>
     <Navbar />
     <div className='min-h-screen flex flex-col justify-center text-center items-center bg-bg3 bg-fixed bg-no-repeat bg-cover'>
-      <div className='bg-blossom bg-fixed bg-cover w-[90vw] h-screen'>
+      <div className='bg-blossom bg-fixed bg-fit bg-cover w-[80vw] md:h-screen xxs:h-auto'>
         <Hero />
-        <div className='flex justify-center pb-12 mb-12 px-6'>
+        <div className='flex justify-center mt-32 px-6 xxs:mt-2'>
           <Trustedby />
         </div>
       </div>
