@@ -15,12 +15,12 @@ export default function Home() {
           <Trustedby />
         </div>
       </div>
-      <div className='bg-bg2 text-center bg-cover bg-fit bg-fixed bg-no-repeat space-y-10 flex-col md:w-[50vw] p-6 sm:flex-row sm:flex-wrap sm:justify-center xxs:w-screen'>
+      <div className='bg-bg2 text-center bg-cover bg-fit bg-fixed bg-no-repeat space-y-10 flex-col md:w-[75vw] p-6 sm:flex-row sm:flex-wrap sm:justify-center xxs:w-screen'>
         <FeaturesCard title={"Feature 1"} image={sakura} content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."} isFlip={false}  />
         <FeaturesCard title={"Feature 2"} image={sakura} content={"Lorem Ipsum is simply dummy text of the printing and typesetting industry."} isFlip={true}  />
         <UserTestimonial />
       </div>
-      <div className='bg-bg1 bg-cover bg-fixed bg-no-repeat md:w-[50vw] xxs:w-screen'>
+      <div className='bg-bg1 bg-cover bg-fixed bg-no-repeat md:w-[75vw] xxs:w-screen'>
         <Pricing />
         <SignupCard title={"Get Started!"} image={sakura} content={'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'} />
         <MoreBlog />
