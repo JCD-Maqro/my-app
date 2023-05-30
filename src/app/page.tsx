@@ -6,9 +6,7 @@ import { sakura } from './assets/images';
 
 export default function Home() {
   return (
-    <main className='flex flex-col min-h-screen bg-bg3 bg-fixed bg-no-repeat bg-cover'>
-      <Navbar />
-    <div className='min-h-screen flex flex-col justify-center text-center items-center'>
+    <main className='min-h-screen flex flex-col justify-center text-center items-center'>
       <div className='bg-blossom bg-fixed bg-fit bg-cover w-[90vw] h-screen xxs:h-auto'>
         <Hero />
         <div className='flex justify-center mb-32 px-6 xxs:mt-2'>
@@ -25,8 +23,6 @@ export default function Home() {
         {/* <SignupCard title={"Get Started!"} image={sakura} content={'Lorem Ipsum is simply dummy text of the printing and typesetting industry.'} />
         <MoreBlog /> */}
       </div>
-    </div>
-    <Footer />
-  </main>
+    </main>
   );
 }

@@ -4,8 +4,12 @@ import Link from 'next/link';
 import { Dropdown } from 'flowbite-react';
 import Image from 'next/image';
 import { logo } from '../assets/images/';
+import { usePathname } from 'next/navigation';
 
 const Navbar = () => {
+
+  const router = usePathname();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -65,24 +69,24 @@ const Navbar = () => {
               </Dropdown>
             </div>
             <Link href="/pricing">
-              <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Pricing</div>
+              <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/pricing' ? 'bg-gray-700' : ''}`}>Pricing</div>
             </Link>
             <Link href="/about">
-              <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</div>
+                <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/about' ? 'bg-gray-700' : ''}`}>About</div>
             </Link>
             <Link href="/contact">
-              <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</div>
+              <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/contact' ? 'bg-gray-700' : ''}`}>Contact</div>
             </Link>
             <Link href="/blog">
-              <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Blog</div>
+              <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/blog' ? 'bg-gray-700' : ''}`}>Blog</div>
             </Link>
           </div>
           <div className="hidden md:flex md:items-center">
             <Link href="/signin">
-              <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Sign in</div>
+              <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/signin' ? 'bg-gray-700' : ''}`}>Sign in</div>
             </Link>
             <Link href="/signup">
-              <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Sign up</div>
+              <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/signup' ? 'bg-gray-700' : ''}`}>Sign up</div>
             </Link>
           </div>
           <div className="flex md:hidden">
@@ -118,22 +122,22 @@ const Navbar = () => {
                 </Dropdown>
               </div>
               <Link href="/pricing">
-                <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Pricing</div>
+                <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/pricing' ? 'bg-gray-700' : ''}`}>Pricing</div>
               </Link>
               <Link href="/about">
-                <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">About</div>
+                  <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/about' ? 'bg-gray-700' : ''}`}>About</div>
               </Link>
               <Link href="/contact">
-                <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Contact</div>
+                <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/contact' ? 'bg-gray-700' : ''}`}>Contact</div>
               </Link>
               <Link href="/blog">
-                <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Blog</div>
+                <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/blog' ? 'bg-gray-700' : ''}`}>Blog</div>
               </Link>
               <Link href="/signin">
-                <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Sign in</div>
+                <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/signin' ? 'bg-gray-700' : ''}`}>Sign in</div>
               </Link>
               <Link href="/signup">
-                <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Sign up</div>
+                <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/signup' ? 'bg-gray-700' : ''}`}>Sign up</div>
               </Link>
 
             </div>
