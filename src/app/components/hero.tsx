@@ -1,14 +1,14 @@
 'use client';
 import Image from 'next/image';
-import { sakura, blossoms } from '../assets/images'
+import { heroImg } from '../assets/images'
 
 const Hero = () => {
 
     return (
         <section className="flex flex-col items-center justify-center h-auto w-auto xxs:text-xs text-center">
-            <div className='bg-halfmoon bg-cover xxs:justify-center items-center'>
-                <h1 className="shadow-2xl- md:text-3xl font-bold pt-10 text-white xxs:text-lg">Thriving in Digital Tranquility:  </h1>
-                <p className="bg-white px-3 uppercase font-extrabold lg:text-lg mb-8 text-pink-400 sm:text-xs">
+            <div className=' xxs:justify-center items-center'>
+                <h1 className="shadow-2xl- md:text-3xl pt-10 text-white xxs:text-lg">Thriving in Digital Tranquility:  </h1>
+                <p className="bg-white rounded-full px-3 mt-2 uppercase font-extrabold lg:text-lg mb-8 text-gray-400 sm:text-xs">
                     Cyber Sakura, Your Security Oasis. 
                 </p>
                 <div className="flex flex-wrap justify-center space-x-4">
@@ -21,8 +21,8 @@ const Hero = () => {
                 </div>
             </div>
             <div className="flex items-center justify-center lg:p-12 sm:p-4 xxs:w-[75%] mt-3">
-                <div className="rounded-md overflow-hidden">
-                    <Image src={sakura} alt="Logo" className="mx-auto" width={1200} height={800} />
+                <div className="rounded-md border-gray-400 border-2 shadow-xl overflow-hidden">
+                    <Image src={heroImg} alt="Logo" className="mx-auto " width={800} height={400} />
                 </div>
             </div>
         </section>

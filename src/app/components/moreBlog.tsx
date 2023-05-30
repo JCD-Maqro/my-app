@@ -8,22 +8,20 @@ const MoreBlog = () => {
     return(
         <section className="m-12">
             <h5 className="lg:text-2xl m-2 font-bold text-white md:text-sm xxs:text-xs">What`s new?</h5>
-            <p className="lg:text-md text-white md:text-sm xxs:text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            <p className="lg:text-md text-white md:text-sm xxs:text-xs">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             <div className="flex flex-wrap justify-center gap-8 my-4 text-left">
                 <div className="max-w-sm my-4">
                     <Link href="/">
                         <Image src={sakura} alt='sakura 1'/>
                         <Card  className='rounded-none'>
                             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white xxs:text-base">
-                            Noteworthy technology acquisitions 2021
+                                The Growing Threat Landscape: How Cyber Sakura Keeps You Safe Online
                             </h5>
                             <div className='flex flex-wrap justify-between'>
                                 <p className="font-normal text-gray-700 dark:text-gray-400 p-2 items-end xxs:text-xs">
-                                    Date
+                                    23/05/2023
                                 </p>
-                                <p className='rounded-full border-2 justify-end sm:w-1/4 p-2 text-center items-end xxs:w-1/2 text-[8px]'>
-                                    Duration   
+                                <p className='rounded-full border-2 justify-end sm:w-1/4 p-2 text-center items-end xxs:w-1/2 text-xs'>
+                                    4 mins.   
                                 </p>
                             </div>
                         </Card>
@@ -34,14 +32,14 @@ const MoreBlog = () => {
                         <Image src={sakura} alt='sakura 1'/>
                         <Card  className='rounded-none'>
                             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white xxs:text-base">
-                            Noteworthy technology acquisitions 2021
+                                Unveiling the Secrets of Cyber Sakura: Exploring the Powerhouse of Digital Security
                             </h5>
                             <div className='flex flex-wrap justify-between'>
                                 <p className="font-normal text-gray-700 dark:text-gray-400 p-2 items-end xxs:text-xs">
-                                    Date
+                                    23/05/2023
                                 </p>
-                                <p className='rounded-full border-2 justify-end sm:w-1/4 p-2 text-center items-end xxs:w-1/2 text-[8px]'>
-                                    Duration    
+                                <p className='rounded-full border-2 justify-end sm:w-1/4 p-2 text-center items-end xxs:w-1/2 text-xs'>
+                                    4 mins.   
                                 </p>
                             </div>
                         </Card>
@@ -49,17 +47,17 @@ const MoreBlog = () => {
                 </div>
                 <div className="max-w-sm my-4">
                 <Link href="/">
-                        <Image src={sakura} alt='sakura 1'/>
+                        <Image src={sakura} alt='sakura 1' />
                         <Card  className='rounded-none'>
                             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white xxs:text-base">
-                            Noteworthy technology acquisitions 2021
+                            Mastering Digital Protection: Cyber Sakura's Guide to Online Security
                             </h5>
                             <div className='flex flex-wrap justify-between'>
                                 <p className="font-normal text-gray-700 dark:text-gray-400 p-2 items-end xxs:text-xs">
-                                    Date
+                                    23/05/2023
                                 </p>
-                                <p className='rounded-full border-2 justify-end sm:w-1/4 p-2 text-center items-end xxs:w-1/2 text-[8px]'>
-                                    Duration   
+                                <p className='rounded-full border-2 justify-end sm:w-1/4 p-2 text-center items-end xxs:w-1/2 text-xs'>
+                                    4 mins.   
                                 </p>
                             </div>
                         </Card>
