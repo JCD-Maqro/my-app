@@ -6,7 +6,7 @@ import { sakura } from './assets/images';
 
 export default function Home() {
   return (
-    <div className='flex flex-col min-h-screen bg-bg3 bg-fixed bg-no-repeat bg-cover'>
+    <main className='flex flex-col min-h-screen bg-bg3 bg-fixed bg-no-repeat bg-cover'>
       <Navbar />
     <div className='min-h-screen flex flex-col justify-center text-center items-center'>
       <div className='bg-blossom bg-fixed bg-fit bg-cover w-[90vw] h-screen xxs:h-auto'>
@@ -27,6 +27,6 @@ export default function Home() {
       </div>
     </div>
     <Footer />
-  </div>
+  </main>
   );
 }

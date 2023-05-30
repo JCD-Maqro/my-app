@@ -15,7 +15,7 @@ const Hero = () => {
                     <button className="lg:text-lg bg-gray-800 hover:bg-gray-700 text-white font-bold px-3 py-2 rounded-md mb-3 sm:text-xs">
                         Join us
                     </button>
-                    <button className="lg:text-lg hover:bg-gray-700 text-white font-bold px-3 py-2 rounded-md text-center mb-3 sm:text-xs">
+                    <button className="lg:text-lg bg-gray-800 hover:bg-gray-700 text-white font-bold px-3 py-2 rounded-md text-center mb-3 sm:text-xs">
                         Request Demo
                     </button>
                 </div>
