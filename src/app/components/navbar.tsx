@@ -53,9 +53,15 @@ const Navbar = () => {
           <div className="hidden sticky top-0 md:flex md:items-center">
             <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
               <Dropdown label="Features" inline={true}>
-                <Dropdown.Item>Password Manager</Dropdown.Item>
-                <Dropdown.Item>File Security</Dropdown.Item>
-                <Dropdown.Item>Device Protection</Dropdown.Item>
+                <Link href="features/feature1">
+                  <Dropdown.Item>Password Manager</Dropdown.Item>
+                </Link>
+                <Link href="features/feature2">
+                  <Dropdown.Item>File Security</Dropdown.Item>
+                </Link>
+                <Link href="features/feature3">
+                  <Dropdown.Item>Device Protection</Dropdown.Item>
+                </Link>
               </Dropdown>
             </div>
             <Link href="/pricing">
@@ -98,6 +104,19 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden">
             <div className="flex flex-col items-center mt-2">
+              <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+                <Dropdown label="Features" inline={true}>
+                  <Link href="features/feature1">
+                    <Dropdown.Item>Password Manager</Dropdown.Item>
+                  </Link>
+                  <Link href="features/feature2">
+                    <Dropdown.Item>File Security</Dropdown.Item>
+                  </Link>
+                  <Link href="features/feature3">
+                    <Dropdown.Item>Device Protection</Dropdown.Item>
+                  </Link>
+                </Dropdown>
+              </div>
               <Link href="/pricing">
                 <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Pricing</div>
               </Link>
@@ -116,6 +135,7 @@ const Navbar = () => {
               <Link href="/signup">
                 <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Sign up</div>
               </Link>
+
             </div>
           </div>
         )}

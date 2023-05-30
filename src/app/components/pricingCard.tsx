@@ -50,7 +50,7 @@ const PricingCard: FC<PricingCardProps> = ({title, isMonthly}) => {
 
     
     return (
-      <section className="m-3">
+      <section className="m-2">
         <div className="lg:max-w-xs md:max-w-screen text-center xs:max-w-screen">
             <div className="bg-white shadow-md rounded-lg p-6 text-left">
 
