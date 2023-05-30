@@ -4,7 +4,7 @@ import testImage from '../assets/images/cybersakuralogo.png'
 
 const TrustedBy = () => {
     return(
-        <section className='lg:mt-12 sm:mt-6'>
+        <section>
             <h5 className="lg:text-2xl font-bold text-white p-8 md:text-sm">Trusted By</h5>
             <div className="flex justify-center">
                 <div className="flex flex-wrap justify-center gap-4 sm:gap-8">

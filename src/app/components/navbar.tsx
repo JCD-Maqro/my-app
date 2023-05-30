@@ -37,7 +37,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`sticky top-0 ${color}`}>
+    <nav className={`z-[999] sticky top-0 ${color}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -53,9 +53,9 @@ const Navbar = () => {
           <div className="hidden sticky top-0 md:flex md:items-center">
             <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
               <Dropdown label="Features" inline={true}>
-                <Dropdown.Item>Feature 1</Dropdown.Item>
-                <Dropdown.Item>Feature 2</Dropdown.Item>
-                <Dropdown.Item>Feature 3</Dropdown.Item>
+                <Dropdown.Item>Password Manager</Dropdown.Item>
+                <Dropdown.Item>File Security</Dropdown.Item>
+                <Dropdown.Item>Device Protection</Dropdown.Item>
               </Dropdown>
             </div>
             <Link href="/pricing">

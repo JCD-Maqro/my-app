@@ -15,6 +15,7 @@ module.exports = {
         bg4: "url('/bg4.jpg')",
         blossom: "url('/cherryblossoms.webp')",
         halfmoon: "url('/half.png')",
+        moon: "url('/moon.png')"
       },
       screens: {
         xxs: "270px",
