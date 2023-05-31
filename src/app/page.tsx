@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
-import { Hero, Navbar, Footer, Trustedby, FeaturesCard, UserTestimonial, Pricing, SignupCard, MoreBlog } from './components'
-import { feature1, feature2, feature3 } from './assets/images';   
+import { Hero, Trustedby, FeaturesCard, UserTestimonial, Pricing, SignupCard, MoreBlog } from './components'
+import { feature1, feature2, feature3 } from './assets/images';  
 
 export default function Home() {
   return (
@@ -13,10 +13,22 @@ export default function Home() {
           <Trustedby />
         </div>
       </div>
-      <div className='bg-bg2 text-center bg-cover bg-fit bg-fixed bg-no-repeat space-y-10 flex-col md:w-[75vw] p-6 sm:flex-row sm:flex-wrap sm:justify-center xxs:w-screen'>
-        <FeaturesCard title={"Real-time Threat Detection"} image={feature1} content={" Stay protected with Cyber Sakura's real-time threat detection."} isFlip={false}  />
-        <FeaturesCard title={"Secure Cloud Backup"} image={feature2} content={"Safeguard your files with Cyber Sakura's secure cloud backup."} isFlip={true}  />
-        <UserTestimonial />
+      <div className='bg-bg2 text-center bg-cover bg-fit bg-fixed bg-no-repeat md:w-[75vw] p-6 sm:flex-row sm:flex-wrap sm:justify-center xxs:w-screen'>
+          <FeaturesCard 
+            title={"Real-time Threat Detection"} 
+            image={feature1} 
+            content={"Cyber Sakura's advanced security algorithms constantly monitor your devices, networks, and online activities, detecting and neutralizing potential threats in real time. With our cutting-edge technology, you can browse, download, and connect with confidence, knowing that Cyber Sakura has your back."} 
+            isFlip={true}  
+          />
+          <FeaturesCard
+            title={"Secure Cloud Backup"}
+            image={feature2}
+            content={"Protect your valuable files and memories with Cyber Sakura's secure cloud backup feature. Safeguard your important documents, photos, videos, and other digital assets by securely storing them in the cloud. Even if your device is compromised or experiences a hardware failure, you can easily restore your data and resume with peace of mind."}
+            isFlip={false}
+          />
+          <div id='carousel' className='max-w-5xl md:translate-x-1/2 sm:translate-x-0 xxs:translate-x-0'>
+            <UserTestimonial />
+          </div>
       </div>
       <div className='bg-bg1 text-center bg-cover bg-fit bg-fixed bg-no-repeat space-y-10 flex-col md:w-[75vw] p-6 sm:flex-row sm:flex-wrap sm:justify-center xxs:w-screen'>
         <Pricing />

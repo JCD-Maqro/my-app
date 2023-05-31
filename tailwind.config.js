@@ -18,6 +18,7 @@ module.exports = {
         moon: "url('/moon.png')"
       },
       screens: {
+        xxxs: "50px",
         xxs: "270px",
         xxshalf: "380px",
         xs: "480px",

@@ -22,7 +22,7 @@ const Hero = () => {
             </div>
             <div className="flex items-center justify-center lg:p-12 sm:p-4 xxs:w-[75%] mt-3">
                 <div className="rounded-md border-gray-400 border-2 shadow-xl overflow-hidden">
-                    <Image src={heroImg} alt="Logo" className="mx-auto " width={800} height={400} />
+                    <Image src={heroImg} alt="Logo" className="mx-auto " width={500} />
                 </div>
             </div>
         </section>

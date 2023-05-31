@@ -60,18 +60,20 @@ const Footer = () => {
                 <div className="w-full lg:w-2/6 mb-1">
                     <h3 className="text-white text-lg mb-2">Subscribe to our newsletter</h3>
                     <p className="text-gray-400 mb-4">For product announcement and exclusive insights</p>
-                    <div className="flex">
-                        <div className="relative">
+                    <div className="flex flex-col md:flex-row md:items-center">
+                        <div className="relative mb-2 md:mb-0 md:mr-2">
                             <input
-                                type="email"
-                                className="w-full rounded-l py-2 px-4 pl-10 bg-gray-700 text-gray-100"
-                                placeholder="Input your email"
+                            type="email"
+                            className="w-full rounded-l py-2 px-4 pl-10 bg-gray-700 text-gray-100"
+                            placeholder="Input your email"
                             />
                             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
-                                <EmailIcon className="h-5 w-5 text-gray-400" />
+                            <EmailIcon className="h-5 w-5 text-gray-400" />
                             </div>
                         </div>
-                        <button className="bg-blue-500 hover:bg-blue-600 text-white rounded-r py-2 px-4">Subscribe</button>
+                        <button className="bg-blue-500 hover:bg-blue-600 text-white rounded py-2 px-4">
+                            Subscribe
+                        </button>
                     </div>
                 </div>
             </div>
