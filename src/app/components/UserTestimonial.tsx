@@ -159,7 +159,7 @@ const Carousel = () => {
 
         {/* Left arrow */}
         <button
-          className="xxs:opacity-40 bg-gray-800 absolute top-1/2 left-2 transform -translate-y-1/2 text-white text-2xl  rounded-full p-2"
+          className="opacity-40 hover:opacity-100 bg-gray-800 absolute top-1/2 left-2 transform -translate-y-1/2 text-white text-2xl  rounded-full p-2"
           onClick={handlePrevSlide}
         >
           &lt;
@@ -167,7 +167,7 @@ const Carousel = () => {
 
         {/* Right arrow */}
         <button
-          className="xxs:opacity-40 bg-gray-800 absolute top-1/2 right-2 transform -translate-y-1/2 text-white text-2xl rounded-full p-2"
+          className="opacity-40 hover:opacity-100 bg-gray-800 absolute top-1/2 right-2 transform -translate-y-1/2 text-white text-2xl rounded-full p-2"
           onClick={handleNextSlide}
         >
           &gt;
