@@ -6,6 +6,7 @@ import { Dropdown } from "flowbite-react";
 import EmailIcon from '@mui/icons-material/Email';
 import Image from 'next/image';
 import { logo } from '../assets/images/';
+import Link from 'next/link';
 
 
 const Footer = () => {
@@ -15,20 +16,22 @@ const Footer = () => {
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-1/6 mb-1    ">
                     <span className="flex items-center text-white font-bold text-xl cursor-pointer">
-                        <div className="flex items-center ml-2">
-                            <Image src={logo} alt="Logo" className="mr-2" width={70} height={70} />
-                        </div>
-                        Cyber Sakura
+                        <Link href={"/"}>
+                            <div className="flex items-center ml-2">
+                                <Image src={logo} alt="Logo" className="mr-2" width={70} height={70} />
+                            </div>
+                            Cyber Sakura
+                            </Link>
                     </span>
                 </div>
                 <div className="w-full lg:w-1/6 mb-1">
                     <h3 className="text-white text-lg mb-2">Product</h3>
                     <ul className="text-gray-400">
                         <li className="mb-2">
-                            <a href="#" className="hover:text-white">Features</a>
+                            <Link href={"/features"} className="hover:text-white">Features</Link>
                         </li>
                         <li className="mb-2">
-                            <a href="#" className="hover:text-white">Pricing</a>
+                            <Link href={"/pricing"} className="hover:text-white">Pricing</Link>
                         </li>
                     </ul>
                 </div>
@@ -36,13 +39,13 @@ const Footer = () => {
                     <h3 className="text-white text-lg mb-2">Resources</h3>
                     <ul className="text-gray-400">
                         <li className="mb-2">
-                            <a href="#" className="hover:text-white">Blog</a>
+                            <Link href={"/blog"} className="hover:text-white">Blog</Link>
                         </li>
                         <li className="mb-2">
-                            <a href="#" className="hover:text-white">User guides</a>
+                            <Link href={"/user/user-guide"} className="hover:text-white">User guides</Link>
                         </li>
                         <li className="mb-2">
-                            <a href="#" className="hover:text-white">Webinars</a>
+                            <a href={"/blog/webinar"} className="hover:text-white">Webinars</a>
                         </li>
                     </ul>
                 </div>
@@ -50,10 +53,10 @@ const Footer = () => {
                     <h3 className="text-white text-lg mb-2">Company</h3>
                     <ul className="text-gray-400">
                         <li className="mb-2">
-                            <a href="#" className="hover:text-white">About</a>
+                            <Link href={"/about"} className="hover:text-white">About</Link>
                         </li>
                         <li className="mb-2">
-                            <a href="#" className="hover:text-white">Join us</a>
+                            <Link href={"/user/signup"} className="hover:text-white">Join us</Link>
                         </li>
                     </ul>
                 </div>
