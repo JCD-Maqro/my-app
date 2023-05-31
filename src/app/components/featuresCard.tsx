@@ -14,7 +14,7 @@ const FeaturesCard: FC<FeaturesCardProps> = ({ title, image, content, isFlip }) 
   const conOrder = isFlip ? 'md:order-2' : 'md:order-1';
 
   return (
-    <section className=' m-3 p-3 md:flex justify-center gap-[30px] items-center text-xxs xxs:gap-0 xxs:p-0 xxs:m-0 xxs:my-3'>
+    <section className=' m-3 p-3 lg:flex justify-center gap-[30px] items-center text-xxs xxs:gap-0 xxs:p-0 xxs:m-0 xxs:my-3'>
       <div className={`${imgOrder} xxs:m-0 `}>
         <Image src={image} alt={`${title}`} height={350} className="mx-auto rounded-lg" />
       </div>
