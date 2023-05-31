@@ -8,15 +8,16 @@ const MoreBlog = () => {
     return(
         <section className="m-12 xxs:m-3">
             <h5 className="lg:text-2xl m-2 font-bold text-white md:text-sm xxs:text-xs">What`s new?</h5>
+            <p className="lg:text-base m-2 text-white md:text-sm xxs:text-xs">Good read for everyone!</p>
             <div className="flex flex-wrap justify-center gap-8 my-4 text-left">
                 
                 {/* card 1 */}
-                <div className="max-w-[300px] my-4 border-gray-600 border-solid border-[5px] rounded-lg">
+                <div className="max-w-[350px] p-3 my-4 bg-gray-800 rounded-lg">
                     <Link href="/">
-                        <Image src={sakura} alt='sakura 1'/>
-                        <Card  className='rounded-none'>
+                        <Image src={sakura} alt='sakura 1' className='rounded-md'/>
+                        <Card  className='rounded-md mt-3'>
                             <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white xxs:text-xs">
-                                The Growing Threat Landscape: How Cyber Sakura Keeps You Safe Online
+                                The Growing Threat Landscape: How Cyber Sakura Keeps You Safe Online to reach inner peace
                             </h5>
                             <div className='flex flex-wrap justify-between'>
                                 <p className="font-normal text-gray-700 dark:text-gray-400 p-2 items-end xxs:text-[10px]">
@@ -31,10 +32,10 @@ const MoreBlog = () => {
                 </div>
 
                 {/* card 2 */}
-                <div className="max-w-[300px] my-4 border-gray-600 border-solid border-[5px] rounded-lg">
+                <div className="max-w-[350px] p-3 my-4 bg-gray-800 rounded-lg">
                     <Link href="/">
-                        <Image src={sakura} alt='sakura 1'/>
-                        <Card  className='rounded-none'>
+                        <Image src={sakura} alt='sakura 2' className='rounded-md'/>
+                        <Card  className='rounded-md mt-3'>
                             <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white xxs:text-xs">
                                 Unveiling the Secrets of Cyber Sakura: Exploring the Powerhouse of Digital Security
                             </h5>
@@ -51,10 +52,10 @@ const MoreBlog = () => {
                 </div>
 
                 {/* card 3 */}
-                <div className="max-w-[300px] my-4 border-gray-600 border-solid border-[5px] rounded-lg">
+                <div className="max-w-[350px] p-3 my-4 bg-gray-800 rounded-lg">
                 <Link href="/">
-                        <Image src={sakura} alt='sakura 1' />
-                        <Card  className='rounded-none'>
+                        <Image src={sakura} alt='sakura 3' className='rounded-md' />
+                        <Card  className='rounded-md mt-3'>
                             <h5 className="text-lg font-bold tracking-tight text-gray-900 dark:text-white xxs:text-xs">
                             Mastering Digital Protection: Cyber Sakura's Guide to Online Security and Oasis
                             </h5>
