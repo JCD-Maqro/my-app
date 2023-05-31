@@ -72,7 +72,7 @@ const MoreBlog = () => {
                 </div>
             </div>
             <div className='flex flex-wrap justify-center'>
-                <Link href="/blog"><button className="bg-gray-700 hover:bg-gray-400 text-white rounded py-2 px-4 m-4 md:align-middle xxs:text-xs">See more articles</button></Link>
+                <Link href="/blog"><button className="bg-gray-700 hover:bg-gray-400 text-white rounded py-2 px-4 m-4 md:align-middle md:text-lg xxs:text-xs">See more articles</button></Link>
             </div>
 
             {/* section 2
