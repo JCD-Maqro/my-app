@@ -8,9 +8,11 @@ import Pricing from  './pricing';
 import SignupCard from './signupCard'
 import MoreBlog from './moreBlog';
 import PricingCard from './pricingCard'
+import Hero2 from './hero2'
 
 export {
     PricingCard,
+    Hero2,
     MoreBlog,
     SignupCard,
     Pricing,
