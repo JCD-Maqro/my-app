@@ -15,12 +15,12 @@ const FeaturesCard: FC<FeaturesCardProps> = ({ title, image, content, isFlip }) 
 
   return (
     <section className=' m-3 p-3 md:flex justify-center gap-[30px] items-center text-xxs xxs:gap-0 xxs:p-0 xxs:m-0 xxs:my-3'>
-      <div className={`${imgOrder} sm:m-0`}>
+      <div className={`${imgOrder} xxs:m-0 `}>
         <Image src={image} alt={`${title}`} height={350} className="mx-auto rounded-lg" />
       </div>
       <div className={`text-left bg-gray-800 p-6 flex flex-col justify-center rounded-lg  ${conOrder}`}>
-        <h3 className="text-white text-xl font-bold mb-4">{title}</h3>
-        <div className="text-gray-300 max-w-xs mb-4 text-left md:mb-0 md:text-gray-400 md:text-sm xxs:text-xs">
+        <h3 className="text-white text-xl font-bold mb-4 xxs:text-center">{title}</h3>
+        <div className="text-gray-300 md:max-w-xs mb-4 md:text-left md:mb-0 md:text-gray-400 md:text-sm xxs:w-fit xxs:text-center xxs:text-xs">
           <p>{content}</p>
         </div>
         <div className='flex justify-center text-center xxs:text-xs mx-3'>
