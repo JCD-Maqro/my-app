@@ -94,19 +94,19 @@ const Carousel = () => {
   const slides = [
     {
       alt: '1',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec sapien non mauris eleifend euismod.',
+      text: '"Cyber Sakura has been a game-changer for me. With its real-time threat detection, I feel confident and safe while browsing the internet. Its like having a personal security guard for my digital life.',
       name: 'John Kentucky',
       position: 'President',
     },
     {
       alt: '2',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec sapien non mauris eleifend euismod.',
+      text: 'I cant recommend Cyber Sakura enough. The secure cloud backup feature has saved me from losing important files multiple times. Its a lifesaver!',
       name: 'Jack Ronald',
       position: 'CEO',
     },
     {
       alt: '3',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec sapien non mauris eleifend euismod.',
+      text: 'Since using Cyber Sakura, Ive experienced a noticeable improvement in my online security. The password manager feature keeps my accounts secure, and the device protection gives me peace of mind. Highly satisfied!',
       name: 'Bill Harper',
       position: 'CEO',
     },

@@ -13,7 +13,7 @@ const SignupCard: FC<SignupCardProps> = ({ title, image, content }) => {
 
   return (
     <section className='flex flex-wrap justify-center m-4 xxs:m-1'>
-      <div className='grid grid-cols-1 m-1 w-[80%] max-w-[1500px] md:grid-cols-2 md:flex justify-center items-center text-left text-xxs border-2 border-grey p-4'>
+      <div className='grid grid-cols-1 m-1 md:grid-cols-2 md:flex justify-center items-center text-left text-xxs border-2 border-grey p-4 '>
         <div className='col-span-1 md:order-2 lg:ml-24 sm:m-0 sm:pb-3'>
           <Image src={image} alt="Feature 1" width={400} className="mx-auto" />
         </div>
