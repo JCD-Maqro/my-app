@@ -149,7 +149,7 @@ const Carousel = () => {
                <div className="flex items-center justify-center w-1/4 sm:w-1/5 md:w-1/6 mt-4">
                  <Image src={logo} alt="logo" width={100} height={100} />
                </div>
-               <div className="mt-4 text-sm sm:text-base md:text-lg">{slide.text}</div>
+               <div className="mt-4 text-sm sm:text-base md:text-lg md:max-w-4xl sm:max-w-lg xs:max-w-md xxs:max-w-sm">{slide.text}</div>
                <div className="mt-4 text-sm sm:text-base md:text-lg mb-3">
                  <AccountCircleIcon /> <span className="font-bold">{slide.name}</span> - {slide.position}
                </div>

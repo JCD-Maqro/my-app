@@ -27,7 +27,7 @@ export default function Home() {
             isFlip={false}
           />
           <div className='w-auto bg-bg4 p-3 justify-center items-center flex'>
-            <div id='carousel' className='md:w-[50%] xxs:w-screen'>
+            <div id='carousel' className='md:w-[60%] xxs:w-screen'>
               <UserTestimonial />
             </div>
           </div>
