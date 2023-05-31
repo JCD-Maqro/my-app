@@ -86,28 +86,25 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { bg4, logo } from '../assets/images';
+import { logo } from '../assets/images';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
     {
-      image: bg4,
       alt: '1',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec sapien non mauris eleifend euismod.',
       name: 'John Kentucky',
       position: 'President',
     },
     {
-      image: bg4,
       alt: '2',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec sapien non mauris eleifend euismod.',
       name: 'Jack Ronald',
       position: 'CEO',
     },
     {
-      image: bg4,
       alt: '3',
       text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec sapien non mauris eleifend euismod.',
       name: 'Bill Harper',
@@ -147,7 +144,6 @@ const Carousel = () => {
               index === currentSlide ? '' : 'hidden'
             }`}
           >
-            <Image src={slide.image} alt={slide.alt} className="object-cover h-full" layout="fill" />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-white font-bold text-center">
             <h3 className="text-white lg:text-3xl font-bold m-3 text-sm sm:text-base md:text-lg">User Testimonials</h3>
                <div className="flex items-center justify-center w-1/4 sm:w-1/5 md:w-1/6 mt-4">
@@ -177,7 +173,7 @@ const Carousel = () => {
           &gt;
         </button>
       </div>
-      <div className="flex justify-center mt-4">
+      <div className="flex justify-center ">
         {slides.map((_, index) => (
           <div
                 key={index}

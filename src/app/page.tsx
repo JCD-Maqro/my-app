@@ -26,9 +26,12 @@ export default function Home() {
             content={"Protect your valuable files and memories with Cyber Sakura's secure cloud backup feature. Safeguard your important documents, photos, videos, and other digital assets by securely storing them in the cloud. Even if your device is compromised or experiences a hardware failure, you can easily restore your data and resume with peace of mind."}
             isFlip={false}
           />
-          <div id='carousel' className='max-w-5xl md:translate-x-1/2 sm:translate-x-0 xxs:translate-x-0'>
-            <UserTestimonial />
+          <div className='w-auto bg-bg4 p-3'>
+            <div id='carousel' className='max-w-5xl md:translate-x-1/2 sm:translate-x-0 xxs:translate-x-0'>
+              <UserTestimonial />
+            </div>
           </div>
+          
       </div>
       <div className='bg-bg1 text-center bg-cover bg-fit bg-fixed bg-no-repeat space-y-10 flex-col md:w-[75vw] p-6 sm:flex-row sm:flex-wrap sm:justify-center xxs:w-screen'>
         <Pricing />
