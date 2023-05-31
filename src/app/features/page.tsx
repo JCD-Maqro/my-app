@@ -4,12 +4,12 @@ import { feature1, feature2, feature3 } from "../assets/images"
 export default function Home() {
     return (
             <div className='flex flex-col justify-center text-white bg-bg3 bg-fixed w-screen'>
-                <div className="w-screen bg-bg1 bg-fixed bg-no-repeat bg-cover">
+                <div className="w-screen bg-bg1 bg-fixed bg-no-repeat bg-cove p-6r">
                     <div className="align-middle">
                         <Hero2 title="Features" />
                     </div>
                 </div>
-                <div className="bg-bg1 bg-fixed">
+                <div className="bg-bg1 bg-fixed p-6">
                     <FeaturesCard 
                         title={"Password Manager"} 
                         image={feature3} 
@@ -17,7 +17,7 @@ export default function Home() {
                         isFlip={true}  
                     />
                 </div>
-                <div className="bg-bg2 bg-fixed">
+                <div className="bg-bg2 bg-fixed p-6">
                     <FeaturesCard
                         title={"Secure Cloud Backup"}
                         image={feature2}
@@ -25,7 +25,7 @@ export default function Home() {
                         isFlip={false}
                     />
                 </div>
-                <div className="bg-bg1 bg-fixed">
+                <div className="bg-bg1 bg-fixed p-6">
                     <FeaturesCard 
                         title={"Real-time Threat Detection"} 
                         image={feature1} 
@@ -33,7 +33,7 @@ export default function Home() {
                         isFlip={true}  
                     />
                 </div>
-                <div className="bg-bg1 bg-fixed">
+                <div className="bg-bg1 bg-fixed p-6">
                     <SignupCard title={"Get Started!"} image={feature3} content={'Get Started with Cyber Sakura: Secure Your Digital World'} />
                 </div>
             </div>
