@@ -3,8 +3,8 @@ import { feature1, feature2, feature3 } from "../assets/images"
 
 export default function Home() {
     return (
-            <div className='flex flex-col justify-center text-white bg-bg3 bg-fixed w-screen'>
-                <div className="w-screen bg-bg1 bg-fixed bg-no-repeat bg-cove p-6r">
+            <div className='flex flex-col justify-center text-white bg-bg3 bg-fixed'>
+                <div className="bg-bg1 bg-fixed bg-no-repeat bg-cove p-6">
                     <div className="align-middle">
                         <Hero2 title="Features" />
                     </div>
