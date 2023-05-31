@@ -5,7 +5,7 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Dropdown } from "flowbite-react";
 import EmailIcon from '@mui/icons-material/Email';
 import Image from 'next/image';
-import logoImage from '../assets/images/cybersakuralogo.png';
+import { logo } from '../assets/images/';
 
 
 const Footer = () => {
@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className="w-full lg:w-1/6 mb-1    ">
                     <span className="flex items-center text-white font-bold text-xl cursor-pointer">
                         <div className="flex items-center ml-2">
-                            <Image src={logoImage} alt="Logo" className="mr-2" width={70} height={70} />
+                            <Image src={logo} alt="Logo" className="mr-2" width={70} height={70} />
                         </div>
                         Cyber Sakura
                     </span>

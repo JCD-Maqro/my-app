@@ -8,7 +8,7 @@ const Hero = () => {
         <section className="flex flex-col items-center justify-center h-auto w-auto xxs:text-xs text-center">
             <div className=' xxs:justify-center items-center'>
                 <h1 className="shadow-2xl- md:text-3xl pt-10 text-white xxs:text-lg">Thriving in Digital Tranquility:  </h1>
-                <p className="bg-white rounded-full px-3 mt-2 uppercase font-extrabold lg:text-lg mb-8 text-gray-400 sm:text-xs">
+                <p className="bg-white rounded-full p-3 mt-2 uppercase font-extrabold lg:text-lg mb-8 text-gray-400 sm:text-xs">
                     Cyber Sakura, Your Security Oasis. 
                 </p>
                 <div className="flex flex-wrap justify-center space-x-4">

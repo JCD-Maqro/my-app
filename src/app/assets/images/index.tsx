@@ -1,18 +1,18 @@
-import bg from './bg.jpg';
-import bg2 from './bg2.jpg';
-import bg3 from './bg3.jpg';
-import bg4 from './bg4.jpg'
-import logo from './cybersakuralogo.png';
+import bg from './bg.webp';
+import bg2 from './bg2.webp';
+import bg3 from './bg3.webp';
+import bg4 from './bg4.webp'
+import logo from './cybersakuralogo.webp';
 import favicon from './favicon.ico'
-import sakura from './sakura-hero-img.jpg'
-import carousel1 from './carousel1.jpg'
-import carousel2 from './carousel2.jpg'
-import carousel3 from './carousel3.jpg'
+import sakura from './sakura-hero-img.webp'
+import carousel1 from './carousel1.webp'
+import carousel2 from './carousel2.webp'
+import carousel3 from './carousel3.webp'
 import blossoms from './cherryblossoms.webp'
-import feature1 from './feature1.jpg'
-import feature2 from './feature2.jpg'
-import feature3 from './feature3.jpg'
-import heroImg from './hero-img.jpg'
+import feature1 from './feature1.webp'
+import feature2 from './feature2.webp'
+import feature3 from './feature3.webp'
+import heroImg from './hero-img.webp'
 
 export{
     feature1,

@@ -9,13 +9,10 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        bg1: "url('/bg.jpg')",
-        bg2: "url('/bg2.jpg')",
-        bg3: "url('/bg3.jpg')",
-        bg4: "url('/bg4.jpg')",
-        blossom: "url('/cherryblossoms.webp')",
-        halfmoon: "url('/half.png')",
-        moon: "url('/moon.png')"
+        bg1: "url('/bg.webp')",
+        bg2: "url('/bg2.webp')",
+        bg3: "url('/bg3.webp')",
+        bg4: "url('/bg4.webp')",
       },
       screens: {
         xxxs: "50px",
