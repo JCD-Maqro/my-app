@@ -14,18 +14,18 @@ const FeaturesCard: FC<FeaturesCardProps> = ({ title, image, content, isFlip }) 
   const conOrder = isFlip ? 'md:order-2' : 'md:order-1';
 
   return (
-    <section className=' m-3 p-3 lg:flex justify-center gap-[30px] items-center text-xxs xxs:gap-0 xxs:p-0 xxs:m-0 xxs:my-3'>
-      <div className={`${imgOrder} xxs:m-0 `}>
-        <Image src={image} alt={`${title}`} height={350} className="mx-auto rounded-lg" />
+    <section className="w-[99%] bg-gray-800 gap-32 lg:p-6 lg:inline-flex lg:flex-wrap lg:justify-center xxs:p-0">
+      <div className={`${imgOrder} xxs:m-0`}>
+        <Image src={image} alt={title} height={400} className="mx-auto" />
       </div>
-      <div className={`text-left bg-gray-800 p-6 flex flex-col justify-center rounded-lg  ${conOrder}`}>
-        <h3 className="text-white text-xl font-bold mb-4 xxs:text-center">{title}</h3>
-        <div className="text-gray-300 md:max-w-xs mb-4 md:text-left md:mb-0 md:text-gray-400 md:text-sm xxs:w-fit xxs:text-center xxs:text-xs">
+      <div className={`text-left p-6 flex flex-col justify-center ${conOrder}`}>
+        <h3 className="text-white text-xl font-bold mb-4 md:text-left sm:text-center xxs:text-center">{title}</h3>
+        <div className="text-white md:max-w-xs mb-4 md:text-left md:mb-0 md:text-sm xxs:w-fit xxs:text-center xxs:text-xs">
           <p>{content}</p>
         </div>
-        <div className='flex justify-center text-center xxs:text-xs mx-3'>
-          <button className="bg-gray-700 hover:bg-gray-400 text-white rounded py-2 px-4 m-4 md:align-middle md:text-sm xxs:text-[10px]">Try now</button>
-          <button className="hover:bg-gray-400 text-white rounded-r py-2 px-4 m-4 md:align-middle md:text-sm xxs:text-[10px]">Learn More</button>
+        <div className="my-3">
+          <button className="bg-gray-700 hover:bg-gray-400 text-white text-xs px-3 py-2">Try now</button>
+          <button className="hover:bg-gray-400 text-white text-xs px-3 py-1">Learn More</button>
         </div>
       </div>
     </section>

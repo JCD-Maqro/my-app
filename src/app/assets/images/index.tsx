@@ -13,11 +13,11 @@ import feature1 from './feature1.webp';
 import feature2 from './feature2.webp';
 import feature3 from './feature3.webp';
 import heroImg from './hero-img.webp';
-import company1 from './company1.webp';
-import company2 from './company2.webp';
-import company3 from './company3.webp';
-import company4 from './company4.webp';
-import company5 from './company5.webp';
+import company1 from './company1.png';
+import company2 from './company2.png';
+import company3 from './company3.png';
+import company4 from './company4.png';
+import company5 from './company5.png';
 
 
 export{

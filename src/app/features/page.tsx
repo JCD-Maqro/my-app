@@ -33,7 +33,7 @@ export default function Home() {
                         isFlip={true}  
                     />
                 </div>
-                <div className="bg-bg1 bg-fixed p-6 pb-6">
+                <div className="bg-bg1 bg-fixed p-6 py-24 ">
                     <SignupCard title={"Get Started!"} image={feature3} content={'Get Started with Cyber Sakura: Secure Your Digital World'} />
                 </div>
             </div>

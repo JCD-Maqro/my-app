@@ -55,7 +55,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="hidden sticky top-0 md:flex md:items-center">
-            <div className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">
+            <div className="text-gray-300 hover:bg-gray-500 px-3 py-2 text-sm font-medium">
               <Dropdown label="Features" inline={true}>
                 <Link href="features/feature1">
                   <Dropdown.Item>Password Manager</Dropdown.Item>
@@ -69,24 +69,24 @@ const Navbar = () => {
               </Dropdown>
             </div>
             <Link href="/pricing">
-              <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/pricing' ? 'bg-gray-700' : ''}`}>Pricing</div>
+              <div className={`text-gray-300 hover:bg-gray-500 px-3 py-2 text-sm font-medium ${router === '/pricing' ? 'bg-gray-700' : ''}`}>Pricing</div>
             </Link>
             <Link href="/about">
-                <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/about' ? 'bg-gray-700' : ''}`}>About</div>
+                <div className={`text-gray-300 hover:bg-gray-500 px-3 py-2 text-sm font-medium ${router === '/about' ? 'bg-gray-700' : ''}`}>About</div>
             </Link>
             <Link href="/contact">
-              <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/contact' ? 'bg-gray-700' : ''}`}>Contact</div>
+              <div className={`text-gray-300 hover:bg-gray-500 px-3 py-2 text-sm font-medium ${router === '/contact' ? 'bg-gray-700' : ''}`}>Contact</div>
             </Link>
             <Link href="/blog">
-              <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/blog' ? 'bg-gray-700' : ''}`}>Blog</div>
+              <div className={`text-gray-300 hover:bg-gray-500 px-3 py-2 text-sm font-medium ${router === '/blog' ? 'bg-gray-700' : ''}`}>Blog</div>
             </Link>
           </div>
           <div className="hidden md:flex md:items-center">
             <Link href="/user/signin">
-              <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/signin' ? 'bg-gray-700' : ''}`}>Sign in</div>
+              <div className={`text-gray-300 hover:bg-gray-500 px-3 py-2 text-sm font-medium ${router === '/signin' ? 'bg-gray-700' : ''}`}>Sign in</div>
             </Link>
             <Link href="/user/signup">
-              <div className={`text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium ${router === '/signup' ? 'bg-gray-700' : ''}`}>Sign up</div>
+              <div className={`text-gray-300 bg-gray-700 hover:bg-gray-500 px-3 py-2 text-sm font-medium ${router === '/signup' ? 'bg-gray-700' : ''}`}>Sign up</div>
             </Link>
           </div>
           <div className="flex md:hidden">

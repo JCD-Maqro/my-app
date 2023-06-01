@@ -22,8 +22,8 @@ const Pricing: React.FC = () => {
                 Yearly
               </div>
             </div>
-          <div className="flex flex-wrap justify-center text-center">
-            <div className="flex lg:flex-row text-left md:flex-col xs:flex-col xxs:flex-col">
+          <div>
+            <div className="flex lg:justify-items-center items-center lg:flex-row text-left md:flex-col xs:flex-col xxs:flex-col">
               {activeTab === 'monthly' && (
                 <>
                   <PricingCard title="Personal" isMonthly={true} />
