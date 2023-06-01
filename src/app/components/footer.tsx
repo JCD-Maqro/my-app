@@ -11,8 +11,8 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 pb-8 pt-28">
-        <div className="mx-auto px-24">
+    <footer className="bg-gray-800 md:pb-8 md:pt-28 sm:pb-4 sm:pt:12 xxs:pb-2 xxs:pt-6">
+        <div className="mx-auto md:px-24 sm:px-12 xxs:px-3">
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-1/6 mb-1    ">
                     <span className="flex items-center text-white font-bold text-xl cursor-pointer">
@@ -21,7 +21,7 @@ const Footer = () => {
                                 <Image src={logo} alt="Logo" className="mr-2" width={70} height={70} />
                             </div>
                             Cyber Sakura
-                            </Link>
+                        </Link>
                     </span>
                 </div>
                 <div className="w-full lg:w-1/6 mb-1">
