@@ -19,7 +19,7 @@ const FeaturesCard: FC<FeaturesCardProps> = ({ title, image, content, isFlip }) 
         <Image src={image} alt={title} height={500} className="mx-auto" />
       </div>
       <div className={`text-left p-6 flex flex-col justify-center ${conOrder}`}>
-        <h3 className="text-white text-xl font-bold mb-4 md:text-left sm:text-center xxs:text-center">{title}</h3>
+        <h3 className="text-white md:text-3xl sm:text-xl xxs:text-lg font-bold mb-6 md:text-left sm:text-center xxs:text-center">{title}</h3>
         <div className="text-white md:max-w-xs mb-4 md:text-left md:mb-0 md:text-sm xxs:w-fit xxs:text-center xxs:text-xs">
           <p>{content}</p>
         </div>
