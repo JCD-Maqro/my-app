@@ -1,5 +1,5 @@
 'use client';
-import FacebookIcon from '@mui/icons-material/Facebook';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import { Dropdown } from "flowbite-react";
@@ -64,17 +64,17 @@ const Footer = () => {
                     <h3 className="text-white text-lg mb-2">Subscribe to our newsletter</h3>
                     <p className="text-gray-400 mb-4">For product announcement and exclusive insights</p>
                     <div className="flex flex-col md:flex-row md:items-center">
-                        <div className="relative mb-2 md:mb-0 md:mr-2">
+                        <div className="relative">
                             <input
                             type="email"
-                            className="w-full rounded-l py-2 px-4 pl-10 bg-gray-700 text-gray-100"
+                            className="w-full py-2 px-4 pl-10 bg-gray-700 text-gray-100"
                             placeholder="Input your email"
                             />
                             <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                             <EmailIcon className="h-5 w-5 text-gray-400" />
                             </div>
                         </div>
-                        <button className="bg-blue-500 hover:bg-blue-600 text-white rounded py-2 px-4">
+                        <button className="bg-blue-500 border-solid border-blue-500 border-[2.5px] hover:bg-blue-600 text-white py-2 px-4">
                             Subscribe
                         </button>
                     </div>
@@ -82,7 +82,7 @@ const Footer = () => {
             </div>
             <hr className="border-gray-700 my-8" /> 
             <div className="flex flex-wrap justify-between items-center">
-            <div className="bg-gray-700 px-3 py-2 rounded-md text-sm font-medium w-25 sm:w-auto mb-3 sm:mb-0 text-white">
+            <div className="bg-gray-700 px-3 py-2 text-sm font-medium w-25 sm:w-auto mb-3 sm:mb-0 text-white">
                 <Dropdown label="English" inline={true}>
                     <Dropdown.Item>
                         Others
@@ -93,9 +93,9 @@ const Footer = () => {
                     <span>&copy; 2023 CyberSakura, Inc. · Privacy · Terms · Sitemap</span>
                 </div>
                 <div className="w-full sm:w-auto mb-3 text-white">
-                    <FacebookIcon />
-                    <LinkedInIcon />
-                    <YouTubeIcon />
+                    <FacebookRoundedIcon fontSize='large'/>
+                    <LinkedInIcon fontSize='large' />
+                    <YouTubeIcon  fontSize='large'/>
                 </div>
             </div>
         </div>
