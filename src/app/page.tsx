@@ -35,7 +35,7 @@ export default function Home() {
             />
           </div>
           
-          <div className='my-6 w-auto bg-gray-400 p-3 py-6 justify-center items-center flex'>
+          <div className='my-6 w-auto bg-gray-200 p-3 py-6 justify-center items-center flex'>
             <div id='carousel' className='md:w-[60%] xxs:w-screen'>
               <UserTestimonial />
             </div>
