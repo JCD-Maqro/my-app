@@ -61,7 +61,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className="w-full lg:w-2/6 mb-1">
-                    <h3 className="text-white text-lg mb-2">Subscribe to our newsletter</h3>
+                    <h3 className="text-white text-lg">Subscribe to our newsletter</h3>
                     <p className="text-gray-400 mb-4">For product announcement and exclusive insights</p>
                     <div className="flex flex-col md:flex-row md:items-center">
                         <div className="relative">
