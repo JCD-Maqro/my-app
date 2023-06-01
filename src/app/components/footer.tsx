@@ -11,8 +11,8 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 py-8 flex-shrink-0">
-        <div className="container mx-auto px-4">
+    <footer className="bg-gray-800 pb-8 pt-28">
+        <div className="mx-auto px-24">
             <div className="flex flex-wrap">
                 <div className="w-full lg:w-1/6 mb-1    ">
                     <span className="flex items-center text-white font-bold text-xl cursor-pointer">
