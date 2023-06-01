@@ -131,7 +131,7 @@ const PricingCard: FC<PricingCardProps> = ({title, isMonthly}) => {
                 <div id="3" className="order-3">
                     <button
                         type="button"
-                        className={`inline-flex w-full justify-center ${buttonStyle} px-5 py-2.5 text-center text-sm font-medium hover:bg-blue-700 focus:outline-none focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900`}
+                        className={`inline-flex w-full justify-center ${buttonStyle} px-5 py-2.5 text-center text-sm font-medium hover:bg-blue-700 hover:text-white focus:outline-none focus:ring-4 focus:ring-blue-200 dark:focus:ring-blue-900`}
                     >
                         {buttonContent}
                     </button>

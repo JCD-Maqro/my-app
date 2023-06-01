@@ -43,7 +43,7 @@ export default function Home() {
       </div>
       <div className='bg-bg1 text-center bg-cover bg-fit bg-fixed bg-no-repeat space-y-10 flex-col md:w-[75vw] p-6 sm:flex-row sm:flex-wrap sm:justify-center xxs:w-screen'>
         <Pricing />
-        <SignupCard title={"Get Started!"} image={sakura} content={'Get Started with Cyber Sakura: Secure Your Digital World'} />
+        <SignupCard title={"Get Started!"} image={sakura} content={'Get Started with Cyber Sakura: Secure Your Digital World and Experience Unparalleled Protection. Safeguard your data, defend against threats, and embrace digital tranquility.'} />
         <MoreBlog />
       </div>
     </main>
