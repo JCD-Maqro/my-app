@@ -17,7 +17,7 @@ const MoreBlog = () => {
                     image={sakura} 
                     tag='Digital Security' 
                     date='23/05/2023' 
-                    duration=' 4 mins. '
+                    duration=' 4 minutes '
                 />
 
                 {/* card 2 */}
@@ -26,7 +26,7 @@ const MoreBlog = () => {
                     image={sakura} 
                     tag='Digital Security' 
                     date='23/05/2023' 
-                    duration=' 4 mins. '
+                    duration=' 4 minutes '
                 />
 
                 {/* card 3 */}
@@ -35,7 +35,7 @@ const MoreBlog = () => {
                     image={sakura} 
                     tag='Digital Security' 
                     date='23/05/2023' 
-                    duration=' 4 mins. '
+                    duration=' 4 minutes '
                 />
             </div>
 
