@@ -21,13 +21,17 @@ const BlogCard: FC<blogCardProps> = ({ title, image, tag, date, duration }) => {
               <h5 className="font-bold leading-[0px] text-gray-900 dark:text-white md:text-sm xxs:text-xs">
                   {title}
               </h5>
-              <div className='flex flex-wrap justify-between'>
-                  <p className="font-normal text-gray-700 dark:text-gray-400 py-2 items-end md:text-sm sm:text-xs xxs:text-[10px]">
-                      {date}
+              <div className='flex justify-between'>
+                <div>
+                  <p className="font-normal text-gray-700 dark:text-gray-400 p-1 items-end text-[12px]">
+                        {date}
                   </p>
-                  <p className='inline-flex rounded-full border-2 justify-center md:w-1/3 sm:w-1/4 py-1 text-center items-end md:text-sm sm:text-xs xxs:w-1/2 xxs:pb-w xxs:text-[10px]'>
+                </div>
+                <div>
+                  <p className=' border-2 rounded-xl justify-center p-1 text-[12px]'>
                       {duration}   
                   </p>
+                </div>
               </div>
           </div>
       </Link>

@@ -8,8 +8,8 @@ import { BlogCard } from '../components';
 const MoreBlog = () => {
     return(
         <section className="m-12 xxs:m-3 flex flex-col justify-items-center items-center">
-            <h5 className="lg:text-2xl m-2 font-bold text-white md:text-sm xxs:text-xs">What`s new?</h5>
-            <p className="md:max-w-lg lg:text-base m-2 text-white md:text-sm xxs:text-xs">Stay up to date with the latest trends, insights, and advancements in cybersecurity with our informative blog section.</p>
+            <h5 className="m-2 font-bold text-white md:text-4xl xxs:text-3xl">What`s new?</h5>
+            <p className="md:max-w-md sm:max-w-sm xs:max-w-xs text-left text-base m-2 text-white">Stay up to date with the latest trends, insights, and advancements in cybersecurity with our informative blog section.</p>
             <div className="flex flex-wrap justify-center gap-8 my-4 text-left">
                 {/* card 1 */}
                 <BlogCard 
@@ -40,7 +40,9 @@ const MoreBlog = () => {
             </div>
 
             <div className='flex flex-wrap justify-center'>
-                <Link href="/blog"><button className="bg-gray-700 hover:bg-gray-400 text-white py-2 px-4 m-4 md:align-middle md:text-lg xxs:text-xs">See more articles</button></Link>
+                <Link href="/blog">
+                    <button className="bg-gray-700 hover:bg-gray-400 text-white py-2 px-4 m-4 md:align-middle text-sm">See more articles</button>
+                </Link>
             </div>
         </section>
     )

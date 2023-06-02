@@ -54,21 +54,21 @@ const Carousel = () => {
 
   return (
     <section className="items-center justify-center ">
-      <div className="h-[500px] sm:h-[300px] md:h-[500px] lg:h-[500px] xl:h-[400px] 2xl:h-[500px] relative">
+      <div className="h-[400px] sm:h-[300px] md:h-[400px] lg:h-[400px] xl:h-[400px] 2xl:h-[400px] relative">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`h-[600px] sm:h-[200px] md:h-[300px] lg:h-[300px] xl:h-[300px] 2xl:h-[300px] ${
+            className={`h-[300px] sm:h-[200px] md:h-[300px] lg:h-[300px] xl:h-[300px] 2xl:h-[300px] ${
               index === currentSlide ? '' : 'hidden'
             }`}
           >
             <div className="absolute inset-0 flex flex-col justify-center items-center text-black text-center">
-               <div className="flex items-center justify-center w-1/4 sm:w-1/5 md:w-1/6 mt-4">
+               <div className="flex items-center justify-center  xxs:w-1/2 xs:w-1/4 sm:w-1/5 md:w-1/6 mt-4">
                  <Image src={slide.company} alt="logo" width={1000} height={500}/>
                </div>
-               <div className="text-justify mt-4 text-sm sm:text-base md:text-2xl md:max-w-xl sm:max-w-lg xs:max-w-md xxs:max-w-sm">{slide.text}</div>
-               <div className="mt-4 text-sm sm:text-xs md:text-sm mb-3">
-                 <AccountCircleIcon fontSize="large" /> <span className="font-bold">{slide.name}</span> - {slide.position}
+               <div className="text-justify mt-4 xxs:text-sm xs:text-lg sm:text-xl md:text-2xl md:max-w-xl sm:max-w-md xs:max-w-[350px] xxs:max-w-[180px]">{slide.text}</div>
+               <div className="mt-4 sm:text-xs md:text-sm mb-3">
+                 <AccountCircleIcon sx={{ fontSize: 60 }} /> <span className="font-bold sm:text-sm md:text-base">{slide.name}</span> - {slide.position}
                </div>
              </div>
           </div>

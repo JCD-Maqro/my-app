@@ -1,13 +1,13 @@
 'use client';
-import React from 'react'
-import { Hero, Trustedby, FeaturesCard, UserTestimonial, Pricing, SignupCard, MoreBlog } from './components'
+import React from 'react';
+import { Hero, Trustedby, FeaturesCard, UserTestimonial, Pricing, SignupCard, MoreBlog } from './components';
 import { feature1, feature2, sakura } from './assets/images';  
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger'; 
 
 export default function Home() {
   return (
-    <main className='min-h-screen flex flex-col justify-center text-center items-center'>
+    <main className='min-h-screen flex flex-col justify-center justify-items-center text-center items-center'>
       {/* bg-blossom bg-fixed bg-fit bg-cover */}
       <div className=' w-[90vw] h-screen xxs:h-auto'> 
         <div className="pb-[150px]">
@@ -17,7 +17,7 @@ export default function Home() {
           <Trustedby />
         </div>
       </div>
-      <div className='bg-bg2 text-center bg-cover bg-fit bg-fixed bg-no-repeat md:w-[99vw] py-6 sm:flex-row sm:flex-wrap sm:justify-center sm:w-screen xxs:w-screen'>
+      <div className='bg-bg2 text-center bg-cover bg-fit bg-fixed bg-no-repeat py-6 sm:flex-wrap sm:justify-center w-[90vw]'>
           <div className='my-3'>
             <FeaturesCard 
               title={"Real-time Threat Detection"} 
@@ -36,17 +36,17 @@ export default function Home() {
           </div>
           
           <div className='my-6 w-auto bg-gray-200 p-3 py-6 justify-center items-center flex'>
-            <div id='carousel' className='md:w-[60%] xxs:w-screen'>
+            <div id='carousel' className='md:max-w-2xl sm:max-w-xl xs:max-w-lg xxs:w-screen'>
               <UserTestimonial />
             </div>
           </div>
       </div>
-      <div className='bg-bg1 text-center bg-cover bg-fit bg-fixed bg-no-repeat space-y-10 flex-col md:w-[75vw] p-6 sm:flex-row sm:flex-wrap sm:justify-center xxs:w-screen'>
+      <div className='bg-bg1 text-center bg-cover bg-fit bg-fixed bg-no-repeat space-y-10 flex-col p-6 sm:flex-row sm:flex-wrap sm:justify-center w-[90vw]'>
         <div className='py-8'>
           <Pricing />
         </div>
         <div className='py-8'>
-          <SignupCard title={"Get Started!"} image={sakura} content={'Get Started with Cyber Sakura: Secure Your Digital World and Experience Unparalleled Protection. Safeguard your data, defend against threats, and embrace digital tranquility.'} />
+          <SignupCard title={"Get Started!"} image={"/sakura-hero-img.webp"} content={'Get Started with Cyber Sakura: Secure Your Digital World and Experience Unparalleled Protection. Safeguard your data, defend against threats, and embrace digital tranquility.'} />
         </div>
         <div className='py-8'>
           <MoreBlog />
