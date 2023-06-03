@@ -12,9 +12,9 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="bg-gray-800 md:pb-8 md:pt-28 sm:pb-4 sm:pt:12 xxs:pb-2 xxs:pt-6">
-        <div className="mx-auto md:px-24 sm:px-12 xxs:px-3">
+        <div className="mx-auto md:px-24 sm:px-8 xs:px-4 xxs:px-3">
             <div className="flex flex-wrap">
-                <div className="w-full lg:w-1/6 mb-1    ">
+                <div className="w-full lg:w-1/6 mb-1">
                     <span className="flex items-center text-white font-bold text-xl cursor-pointer">
                         <Link href={"/"}>
                             <div className="flex items-center ml-2">
@@ -82,13 +82,13 @@ const Footer = () => {
             </div>
             <hr className="border-gray-700 my-8" /> 
             <div className="flex flex-wrap justify-between items-center">
-            <div className="bg-gray-700 px-3 py-2 text-sm font-medium w-25 sm:w-auto mb-3 sm:mb-0 text-white">
-                <Dropdown label="English" inline={true}>
-                    <Dropdown.Item>
-                        Others
-                    </Dropdown.Item>
-                </Dropdown>
-            </div>
+                <div className="bg-gray-700 px-3 py-2 text-sm font-medium w-25 sm:w-auto mb-3 sm:mb-0 text-white">
+                    <Dropdown label="English" inline={true}>
+                        <Dropdown.Item>
+                            Others
+                        </Dropdown.Item>
+                    </Dropdown>
+                </div>
                 <div className="w-full sm:w-auto mb-3 text-white">
                     <span>&copy; 2023 CyberSakura, Inc. · Privacy · Terms · Sitemap</span>
                 </div>
