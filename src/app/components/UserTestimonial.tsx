@@ -54,11 +54,11 @@ const Carousel = () => {
 
   return (
     <section className="items-center justify-center ">
-      <div className="h-[400px] sm:h-[300px] md:h-[400px] lg:h-[400px] xl:h-[400px] 2xl:h-[400px] relative">
+      <div className="h-[400px] xxs:h-[400px] sm:h-[300px] md:h-[400px] lg:h-[400px] xl:h-[400px] 2xl:h-[400px] relative">
         {slides.map((slide, index) => (
           <div
             key={index}
-            className={`h-[300px] sm:h-[200px] md:h-[300px] lg:h-[300px] xl:h-[300px] 2xl:h-[300px] ${
+            className={`h-[300px] xxs:h-[300px] sm:h-[200px] md:h-[300px] lg:h-[300px] xl:h-[300px] 2xl:h-[300px] ${
               index === currentSlide ? '' : 'hidden'
             }`}
           >
@@ -66,7 +66,7 @@ const Carousel = () => {
                <div className="flex items-center justify-center  xxs:w-1/2 xs:w-1/4 sm:w-1/5 md:w-1/6 mt-4">
                  <Image src={slide.company} alt="logo" width={1000} height={500}/>
                </div>
-               <div className="text-justify mt-4 xxs:text-sm xs:text-lg sm:text-xl md:text-2xl md:max-w-xl sm:max-w-md xs:max-w-[350px] xxs:max-w-[180px]">{slide.text}</div>
+               <div className="text-justify mt-4 xxs:text-sm xs:text-lg sm:text-xl md:text-2xl md:max-w-xl sm:max-w-md xs:max-w-[340px] xxs:max-w-[280px]">{slide.text}</div>
                <div className="mt-4 sm:text-xs md:text-sm mb-3">
                  <AccountCircleIcon sx={{ fontSize: 60 }} /> <span className="font-bold sm:text-sm md:text-base">{slide.name}</span> - {slide.position}
                </div>
@@ -76,7 +76,7 @@ const Carousel = () => {
 
         {/* Left arrow */}
         <button
-          className="opacity-40 hover:opacity-100 bg-gray-800 absolute top-1/2 left-2 transform-translate-y-1/2 text-white text-2xl px-2 py-0"
+          className="xxs:opacity-0 xs:opacity-40 xs:hover:opacity-100 bg-gray-800 absolute top-1/2 left-2 transform-translate-y-1/2 text-white text-2xl px-2 py-0"
           onClick={handlePrevSlide}
         >
           &lt;
@@ -84,12 +84,23 @@ const Carousel = () => {
 
         {/* Right arrow */}
         <button
-          className="opacity-40 hover:opacity-100 bg-gray-800 absolute top-1/2 right-2 transform-translate-y-1/2 text-white text-2xl px-2 py-0"
+          className="xxs:opacity-0 xs:opacity-40 xs:hover:opacity-100 bg-gray-800 absolute top-1/2 right-2 transform-translate-y-1/2 text-white text-2xl px-2 py-0"
           onClick={handleNextSlide}
         >
           &gt;
         </button>
+        
       </div>
+
+      <div className="flex justify-center my-3 ">
+          {slides.map((_, index) => (
+            <div
+                  key={index}
+                  className={`w-4 h-4 mx-1 rounded-full xs:opacity-0 xxs:opacity-100 ${index === currentSlide ? 'bg-gray-800' : 'bg-gray-300'}`}
+                  onClick={() => handleSlideChange(index)}
+                ></div>
+              ))}
+        </div>
     </section>
   );
 };

@@ -23,12 +23,12 @@ const BlogCard: FC<blogCardProps> = ({ title, image, tag, date, duration }) => {
               </h5>
               <div className='flex justify-between'>
                 <div>
-                  <p className="font-normal text-gray-700 dark:text-gray-400 p-1 items-end text-[12px]">
+                  <p className="font-normal text-gray-700 dark:text-gray-400 p-1 items-end xs:text-[12px] xxs:text-[10px]">
                         {date}
                   </p>
                 </div>
                 <div>
-                  <p className=' border-2 rounded-xl justify-center p-1 text-[12px]'>
+                  <p className=' border-2 rounded-xl justify-center p-1 xs:text-[12px] xxs:text-[10px]'>
                       {duration}   
                   </p>
                 </div>

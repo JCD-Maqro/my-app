@@ -24,7 +24,7 @@ const FeaturesCard: FC<FeaturesCardProps> = ({ title, image, content, isFlip }) 
         <div className="text-white max-w-xs md:mb-4 md:text-left sm:mb-0 xs:mb-6 md:text-sm md:p-0 sm:px-6 sm:text-justify xs:text-justify xxs:w-fit xxs:text-justify xxs:text-xs">
           <p>{content}</p>
         </div>
-        <div className="md:my-3 sm:my-3 flex flex-wrap max-w-xs sm:justify-normal md:p-0 sm:px-6 xs:justify-center">
+        <div className="my-3 flex flex-wrap max-w-xs sm:justify-normal md:p-0 sm:px-6 xs:justify-center xxs:justify-center">
           <button className="bg-gray-700 hover:bg-gray-400 text-white md:text-base sm:text-sm px-3 py-2">Try now</button>
           <button className="hover:bg-gray-400 text-white md:text-base sm:text-sm px-3 py-2">Learn More</button>
         </div>

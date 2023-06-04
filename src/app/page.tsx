@@ -46,7 +46,8 @@ export default function Home() {
           <Pricing />
         </div>
         <div className='py-8'>
-          <SignupCard title={"Get Started!"} image={"/sakura-hero-img.webp"} content={'Get Started with Cyber Sakura: Secure Your Digital World and Experience Unparalleled Protection. Safeguard your data, defend against threats, and embrace digital tranquility.'} />
+        {/* "/sakura-hero-img.webp" */}
+          <SignupCard title={"Get Started!"} image={sakura} content={'Get Started with Cyber Sakura: Secure Your Digital World and Experience Unparalleled Protection. Safeguard your data, defend against threats, and embrace digital tranquility.'} />
         </div>
         <div className='py-8'>
           <MoreBlog />
