@@ -9,21 +9,21 @@ const Carousel = () => {
   const slides = [
     {
       alt: '1',
-      text: 'Cyber Sakura has been a game-changer for me. With its real-time threat detection, I feel confident and safe while browsing the internet. Its like having a personal security guard for my digital life.',
-      name: 'John Kentucky',
+      text: 'Cyber Sakura has been a game-changer for me. With its real-time threat detection, I feel confident and safe while browsing the internet.',
+      name: 'John Ken',
       position: 'President',
       company: company1,
     },
     {
       alt: '2',
-      text: 'I cant recommend Cyber Sakura enough. The secure cloud backup feature has saved me from losing important files multiple times. Its a lifesaver!',
+      text: 'I cant recommend Cyber Sakura enough. The secure cloud backup feature has saved me from losing important files multiple times.',
       name: 'Jack Ronald',
       position: 'CEO',
       company: company2,
     },
     {
       alt: '3',
-      text: 'Since using Cyber Sakura, Ive experienced a noticeable improvement in my online security. The password manager feature keeps my accounts secure, and the device protection gives me peace of mind. Highly satisfied!',
+      text: 'Ive experienced a noticeable improvement in my online security. The password manager feature keeps my accounts secure.',
       name: 'Bill Harper',
       position: 'CEO',
       company: company4,
@@ -66,7 +66,7 @@ const Carousel = () => {
                <div className="flex items-center justify-center  xxs:w-1/2 xs:w-1/4 sm:w-1/5 md:w-1/6 mt-4">
                  <Image src={slide.company} alt="logo" width={1000} height={500}/>
                </div>
-               <div className="text-justify mt-4 xxs:text-sm xs:text-lg sm:text-xl md:text-2xl md:max-w-xl sm:max-w-md xs:max-w-[340px] xxs:max-w-[280px]">{slide.text}</div>
+               <div className="text-justify mt-4 xxs:text-sm xs:text-lg sm:text-xl md:text-2xl md:max-w-xl sm:max-w-[560px] xs:max-w-[380px] xxs:max-w-[250px]">{slide.text}</div>
                <div className="mt-4 sm:text-xs md:text-sm mb-3">
                  <AccountCircleIcon sx={{ fontSize: 60 }} /> <span className="font-bold sm:text-sm md:text-base">{slide.name}</span> - {slide.position}
                </div>
@@ -76,7 +76,7 @@ const Carousel = () => {
 
         {/* Left arrow */}
         <button
-          className="xxs:opacity-0 xs:opacity-40 xs:hover:opacity-100 bg-gray-800 absolute top-1/2 left-2 transform-translate-y-1/2 text-white text-2xl px-2 py-0"
+          className="xxs:opacity-0 xs:opacity-0 sm:opacity-40 sm:hover:opacity-100 bg-gray-800 absolute top-1/2 left-2 transform-translate-y-1/2 text-white text-2xl px-2 py-0"
           onClick={handlePrevSlide}
         >
           &lt;
@@ -84,7 +84,7 @@ const Carousel = () => {
 
         {/* Right arrow */}
         <button
-          className="xxs:opacity-0 xs:opacity-40 xs:hover:opacity-100 bg-gray-800 absolute top-1/2 right-2 transform-translate-y-1/2 text-white text-2xl px-2 py-0"
+          className="xxs:opacity-0 xs:opacity-0 sm:opacity-40 sm:hover:opacity-100 bg-gray-800 absolute top-1/2 right-2 transform-translate-y-1/2 text-white text-2xl px-2 py-0"
           onClick={handleNextSlide}
         >
           &gt;
@@ -96,7 +96,7 @@ const Carousel = () => {
           {slides.map((_, index) => (
             <div
                   key={index}
-                  className={`w-4 h-4 mx-1 rounded-full xs:opacity-0 xxs:opacity-100 ${index === currentSlide ? 'bg-gray-800' : 'bg-gray-300'}`}
+                  className={`w-4 h-4 mx-1 rounded-full sm:opacity-0 xs:opacity-100 ${index === currentSlide ? 'bg-gray-800' : 'bg-gray-300'}`}
                   onClick={() => handleSlideChange(index)}
                 ></div>
               ))}

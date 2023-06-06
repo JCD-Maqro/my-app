@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className='min-h-screen flex flex-col justify-center justify-items-center text-center items-center'>
       {/* bg-blossom bg-fixed bg-fit bg-cover */}
-      <div className=' w-[90vw] h-screen xxs:h-auto'> 
+      <div className='max-w-5xl h-screen xxs:h-auto'> 
         <div className="pb-[150px]">
           <Hero />
         </div>
@@ -17,14 +17,15 @@ export default function Home() {
           <Trustedby />
         </div>
       </div>
-      <div className='bg-bg2 text-center bg-cover bg-fit bg-fixed bg-no-repeat py-6 sm:flex-wrap sm:justify-center w-[90vw]'>
+      <div className='bg-bg2 text-center bg-cover bg-fit bg-fixed bg-no-repeat flex justify-center w-[90vw] py-6 '>
+        <div className='md:max-w-7xl sm:max-w-none xxs:max-w-none'>
           <div className='my-3'>
-            <FeaturesCard 
-              title={"Real-time Threat Detection"} 
-              image={feature1} 
-              content={"Cyber Sakura's advanced security algorithms constantly monitor your devices, networks, and online activities, detecting and neutralizing potential threats in real time. With our cutting-edge technology, you can browse, download, and connect with confidence, knowing that Cyber Sakura has your back."} 
-              isFlip={false}  
-            />
+              <FeaturesCard 
+                title={"Real-time Threat Detection"} 
+                image={feature1} 
+                content={"Cyber Sakura's advanced security algorithms constantly monitor your devices, networks, and online activities, detecting and neutralizing potential threats in real time. With our cutting-edge technology, you can browse, download, and connect with confidence, knowing that Cyber Sakura has your back."} 
+                isFlip={false}  
+              />
           </div>
           <div className='my-3'>
             <FeaturesCard 
@@ -36,10 +37,11 @@ export default function Home() {
           </div>
           
           <div className='my-6 w-auto bg-gray-200 p-3 py-6 justify-center items-center flex'>
-            <div id='carousel' className='md:max-w-2xl sm:max-w-xl xs:max-w-lg xxs:w-screen'>
+            <div id='carousel' className='md:max-w-3xl sm:max-w-xl xs:max-w-lg xxs:w-screen'>
               <UserTestimonial />
             </div>
           </div>
+        </div>
       </div>
       <div className='bg-bg1 text-center bg-cover bg-fit bg-fixed bg-no-repeat space-y-10 flex-col p-6 sm:flex-row sm:flex-wrap sm:justify-center w-[90vw]'>
         <div className='py-8'>

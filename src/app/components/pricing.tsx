@@ -25,18 +25,18 @@ const Pricing: React.FC = () => {
               </div>
             </div>
           <div>
-            <div className="flex flex-wrap justify-center text-left">
+            <div className="flex flex-wrap justify-center items-center text-left">
               {activeTab === 'monthly' && (
                 <>
                   <PricingCard title="Personal" isMonthly={true} />
-                  <PricingCard title="Family" isMonthly={true} />
+                  <PricingCard title="Startup" isMonthly={true} />
                   <PricingCard title="Organization" isMonthly={true} />
                 </>
               )}
               {activeTab === 'yearly' && (
                 <>
                   <PricingCard title="Personal" isMonthly={false} />
-                  <PricingCard title="Family" isMonthly={false} />
+                  <PricingCard title="Startup" isMonthly={false} />
                   <PricingCard title="Organization" isMonthly={false} />
                 </>
               )}

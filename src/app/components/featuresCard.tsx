@@ -20,7 +20,7 @@ const FeaturesCard: FC<FeaturesCardProps> = ({ title, image, content, isFlip }) 
         <Image src={image} alt={title} height={450} />
       </div>
       <div className={`md:ax-w-lg sm:max-w-md text-left py-6 flex flex-col justify-items-center justify-center ${conOrder}`}>
-        <h3 className="max-w-xs text-white md:text-3xl sm:text-xl xxs:text-lg font-bold md:mb-6 sm:mb-3 xs:mb-6 md:p-0 sm:px-6 md:text-left sm:text-left xs:text-center xxs:text-center">{title}</h3>
+        <h3 className="max-w-xs text-white md:text-3xl sm:text-2xl  xs:text:xl xxs:text-lg font-bold md:mb-6 sm:mb-3 xs:mb-6 md:p-0 sm:px-6 md:text-left sm:text-left xs:text-center xxs:text-center">{title}</h3>
         <div className="text-white max-w-xs md:mb-4 md:text-left sm:mb-0 xs:mb-6 md:text-sm md:p-0 sm:px-6 sm:text-justify xs:text-justify xxs:w-fit xxs:text-justify xxs:text-xs">
           <p>{content}</p>
         </div>

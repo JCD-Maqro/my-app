@@ -5,7 +5,7 @@ import { company1, company2, company3, company4, company5 } from '../assets/imag
 const TrustedBy = () => {
     return(
         <section className="p-8">
-            <h5 className="lg:text-2xl font-bold text-black md:text-xl sm:text-lg xxs:text-lg">Trusted By</h5>
+            <h5 className="sm:text-2xl xs:text-xl xxs:text-xl font-bold text-black">Trusted By</h5>
             <div className="flex flex-wrap justify-center justify-items-center p-3">
                 <Image src={company1} width={200} height={200} alt="Company 1" className="mx-3 sm:my-3 xxs:my-3" />
                 <Image src={company2} width={200} height={200} alt="Company 2" className="mx-3 sm:my-3 xxs:my-3" />
