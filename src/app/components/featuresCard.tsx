@@ -16,8 +16,8 @@ const FeaturesCard: FC<FeaturesCardProps> = ({ title, image, content, isFlip }) 
   return (
     // gap-32 lg:p-6 lg:inline-flex lg:flex-wrap lg:justify-center xxs:p-0
     <section className="bg-gray-800 p-6 grid justify-items-center sm:grid-flow-col xs:grid-flow-row xs:inline-grid w-[100%]">
-      <div className={`${imgOrder} md:max-w-lg sm:max-w-md`}>
-        <Image src={image} alt={title} height={450} />
+      <div className={`${imgOrder} md:max-w-lg sm:max-w-md flex justify-center items-center`}>
+          <Image src={image} alt={title} height={450}/>
       </div>
       <div className={`md:ax-w-lg sm:max-w-md text-left py-6 flex flex-col justify-items-center justify-center ${conOrder}`}>
         <h3 className="max-w-xs text-white md:text-3xl sm:text-2xl  xs:text:xl xxs:text-lg font-bold md:mb-6 sm:mb-3 xs:mb-6 md:p-0 sm:px-6 md:text-left sm:text-left xs:text-center xxs:text-center">{title}</h3>

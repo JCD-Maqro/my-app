@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { FC  } from "react";
 import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import { Tooltip } from 'flowbite-react';
 interface PricingCardProps {
     title: string;
     isMonthly: boolean;
@@ -47,7 +48,7 @@ const PricingCard: FC<PricingCardProps> = ({title, isMonthly}) => {
             isFeature5Line = "";
             buttonStyle = "bg-blue-600 text-white"
             popularIcon = (
-                <p className='text-white bg-gray-800 rounded-3xl border-2 justify-items-center w-auto p-2 text-xs'>
+                <p className='text-white bg-gray-800 rounded-full border-2 flex items-center justify-center px-2 h-7 w-auto text-xs'>
                     Popular 
                 </p>
             )
@@ -102,17 +103,9 @@ const PricingCard: FC<PricingCardProps> = ({title, isMonthly}) => {
                             <svg className="h-5 w-5 shrink-0 text-blue-600 dark:text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                             </svg>
-                            <span className="md:sm font-normal leading-tight text-gray-500 dark:text-gray-400 xxs:text-xs">
-                            Protects and manages passwords 
-                            <InfoOutlinedIcon 
-                                fontSize="small" 
-                                onClick={handleClick}
-                                className="px-1"
-                                /> {isClicked && (
-                                    <div className="absolute bg-gray-300 p-2 rounded shadow max-w-xs">
-                                      Password Manager that encrypts your passwords
-                                    </div>
-                                  )}
+                            <span className="flex justify-center items-center md:text-sm font-normal leading-tight text-gray-500 dark:text-gray-400 xxs:text-xs">
+                                Manages passwords&nbsp;<Tooltip content="Protect your password as well" className="px-1"><InfoOutlinedIcon fontSize="small" /></Tooltip>
+                            
                             </span>
                         </div>
                         <div className={`flex space-x-3 ${isFeature4Line}`}>

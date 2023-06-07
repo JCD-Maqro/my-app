@@ -2,13 +2,27 @@
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import YouTubeIcon from '@mui/icons-material/YouTube';
-import { Dropdown } from "flowbite-react";
+// import { Dropdown } from "flowbite-react";
 import EmailIcon from '@mui/icons-material/Email';
 import Image from 'next/image';
 import { logo } from '../assets/images/';
 import Link from 'next/link';
+import { Dropdown } from "@nextui-org/react";
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Footer = () => {
+    const ButtonStyle = {
+        borderRadius: "0px",
+        backgroundColor: "transparent",
+        color:"white",
+        opacity: "0.9",
+        fontSize: "18px",
+        fontWeight: "400",
+        lineHeight: "24px",
+        display: "flex",
+        justifyContent: "space-between"
+    }
+
   return (
     <footer className="bg-gray-800 md:pb-8 md:pt-28 sm:pb-4 sm:pt-12 xxs:pb-2 xxs:pt-6">
       <div className="lg:px-24 md:px-12 sm:px-8 xs:px-4 ">
@@ -85,11 +99,14 @@ const Footer = () => {
             <hr className="border-gray-500 my-8"/>
             <div className="grid sm:grid-flow-col xs:grid-flow-row">
                 <div className='col-span-1 m-3 flex justify-start items-center'>
-                    <div className="inline-flex bg-gray-700 p-2 text-sm font-medium text-white">
-                        <Dropdown label="English" inline={true}>
-                        <Dropdown.Item>
-                            Others
-                        </Dropdown.Item>
+                    <div className="inline-flex bg-gray-700 p-1 text-sm font-medium text-white">
+                        <Dropdown>
+                            <Dropdown.Button style={ButtonStyle} iconRight={<KeyboardArrowDownIcon className='ml-5'/>}>English</Dropdown.Button>
+                            <Dropdown.Menu aria-label="Static Actions">
+                                <Dropdown.Item>Tagalog</Dropdown.Item>
+                                <Dropdown.Item>Japanese</Dropdown.Item>
+                                <Dropdown.Item>Chinese</Dropdown.Item>
+                            </Dropdown.Menu>
                         </Dropdown>
                     </div>
                 </div>

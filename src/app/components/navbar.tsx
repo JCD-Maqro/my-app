@@ -1,10 +1,11 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { Dropdown } from 'flowbite-react';
+import { Dropdown } from "@nextui-org/react";
 import Image from 'next/image';
 import { logo } from '../assets/images/';
 import { usePathname } from 'next/navigation';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 
 const Navbar = () => {
 
@@ -40,32 +41,40 @@ const Navbar = () => {
     };
   }, []);
 
+  const ButtonStyle = {
+    borderRadius: "0px",
+    backgroundColor: "transparent",
+    color:"white",
+    opacity: "0.9",
+    fontSize: "18px",
+    fontWeight: "400",
+    lineHeight: "24px",
+    display: "inline-flex ",
+    justifyContent: "space-between"
+  }
+
   return (
     <nav className={`z-[999] sticky top-0 ${color}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between p-3">
           <div className="flex items-center">
             <Link href="/">
               <span className="flex items-center text-white font-bold text-xl cursor-pointer">
                 <div className="flex items-center ml-2">
                   <Image src={logo} alt="Logo" className="mr-2" width={70} height={70} />
                 </div>
-                Cyber Sakura
               </span>
             </Link>
           </div>
           <div className="hidden sticky top-0 md:flex md:items-center">
-            <div className="text-gray-300 hover:bg-gray-500 px-3 py-2 text-sm font-medium">
-              <Dropdown label="Features" inline={true}>
-                <Link href="features/feature1">
-                  <Dropdown.Item>Password Manager</Dropdown.Item>
-                </Link>
-                <Link href="features/feature2">
-                  <Dropdown.Item>File Security</Dropdown.Item>
-                </Link>
-                <Link href="features/feature3">
-                  <Dropdown.Item>Device Protection</Dropdown.Item>
-                </Link>
+            <div className="text-gray-300 hover:bg-gray-500 text-sm font-medium">
+              <Dropdown>
+                <Dropdown.Button style={ButtonStyle} iconRight={<KeyboardArrowDownIcon fontSize='large'/>}>Features</Dropdown.Button>
+                <Dropdown.Menu aria-label="Static Actions">
+                  <Dropdown.Item><Link href="features/feature1">Password Manager</Link></Dropdown.Item>
+                  <Dropdown.Item><Link href="features/feature2">File Security</Link></Dropdown.Item>
+                  <Dropdown.Item><Link href="features/feature3">Device Protection</Link></Dropdown.Item>
+                </Dropdown.Menu>
               </Dropdown>
             </div>
             <Link href="/pricing">

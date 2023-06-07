@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className='min-h-screen flex flex-col justify-center justify-items-center text-center items-center'>
       {/* bg-blossom bg-fixed bg-fit bg-cover */}
-      <div className='max-w-5xl h-screen xxs:h-auto'> 
+      <div className='max-w-7xl h-screen xxs:h-auto'> 
         <div className="pb-[150px]">
           <Hero />
         </div>
@@ -18,8 +18,8 @@ export default function Home() {
         </div>
       </div>
       <div className='bg-bg2 text-center bg-cover bg-fit bg-fixed bg-no-repeat flex justify-center w-[90vw] py-6 '>
-        <div className='md:max-w-7xl sm:max-w-none xxs:max-w-none'>
-          <div className='my-3'>
+        <div className='w-full flex-col flex justify-center items-center'>
+          <div className='max-w-7xl my-3'>
               <FeaturesCard 
                 title={"Real-time Threat Detection"} 
                 image={feature1} 
@@ -27,7 +27,7 @@ export default function Home() {
                 isFlip={false}  
               />
           </div>
-          <div className='my-3'>
+          <div className='max-w-7xl my-3'>
             <FeaturesCard 
               title={"Secure Cloud Backup"}
               image={feature2}
@@ -36,8 +36,8 @@ export default function Home() {
             />
           </div>
           
-          <div className='my-6 w-auto bg-gray-200 p-3 py-6 justify-center items-center flex'>
-            <div id='carousel' className='md:max-w-3xl sm:max-w-xl xs:max-w-lg xxs:w-screen'>
+          <div className='my-6 bg-gray-200 p-3 py-6 justify-center items-center flex w-full'>
+            <div id='carousel' className='md:max-w-4xl sm:max-w-3xl xs:max-w-xl xxs:w-screen'>
               <UserTestimonial />
             </div>
           </div>
