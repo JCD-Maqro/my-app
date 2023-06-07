@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className='min-h-screen flex flex-col justify-center justify-items-center text-center items-center'>
       {/* bg-blossom bg-fixed bg-fit bg-cover */}
-      <div className='max-w-7xl h-screen xxs:h-auto'> 
+      <div className='max-w-5xl h-screen xxs:h-auto'> 
         <div className="pb-[150px]">
           <Hero />
         </div>

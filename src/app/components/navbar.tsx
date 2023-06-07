@@ -49,7 +49,7 @@ const Navbar = () => {
     fontSize: "18px",
     fontWeight: "400",
     lineHeight: "24px",
-    display: "inline-flex ",
+    display: "flex",
     justifyContent: "space-between"
   }
 
@@ -118,16 +118,13 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="flex flex-col items-center mt-2">
               <div className="mx-2 text-gray-300 hover:bg-gray-700 px-1 py-2 rounded-md text-sm font-medium">
-                <Dropdown label="Features" inline={true}>
-                  <Link href="features/feature1">
-                    <Dropdown.Item>Password Manager</Dropdown.Item>
-                  </Link>
-                  <Link href="features/feature2">
-                    <Dropdown.Item>File Security</Dropdown.Item>
-                  </Link>
-                  <Link href="features/feature3">
-                    <Dropdown.Item>Device Protection</Dropdown.Item>
-                  </Link>
+                <Dropdown>
+                  <Dropdown.Button style={ButtonStyle} iconRight={<KeyboardArrowDownIcon fontSize='large'/>}>Features</Dropdown.Button>
+                  <Dropdown.Menu aria-label="Static Actions">
+                    <Dropdown.Item><Link href="features/feature1">Password Manager</Link></Dropdown.Item>
+                    <Dropdown.Item><Link href="features/feature2">File Security</Link></Dropdown.Item>
+                    <Dropdown.Item><Link href="features/feature3">Device Protection</Link></Dropdown.Item>
+                  </Dropdown.Menu>
                 </Dropdown>
               </div>
               <Link href="/pricing">
