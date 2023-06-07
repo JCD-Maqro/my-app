@@ -10,6 +10,7 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 const CarouselData = () => {
   const slides = [
     {
+      id: 1,
       alt: '1',
       text: 'Cyber Sakura has been a game-changer for me. With its real-time threat detection, I feel confident and safe while browsing the internet.',
       name: 'John Ken',
@@ -17,6 +18,7 @@ const CarouselData = () => {
       company: company1,
     },
     {
+      id: 2,
       alt: '2',
       text: 'I cant recommend Cyber Sakura enough. The secure cloud backup feature has saved me from losing important files multiple times.',
       name: 'Jack Ronald',
@@ -24,12 +26,30 @@ const CarouselData = () => {
       company: company2,
     },
     {
+      id: 3,
       alt: '3',
       text: 'Ive experienced a noticeable improvement in my online security. The password manager feature keeps my accounts secure.',
       name: 'Bill Harper',
       position: 'CEO',
       company: company1,
     },
+    {
+      id: 4,
+      alt: '4',
+      text: 'Ive experienced a noticeable improvement in my online security. The password manager feature keeps my accounts secure.',
+      name: 'Jay Stark',
+      position: 'CEO',
+      company: company1,
+    },
+    {
+      id: 5,
+      alt: '5',
+      text: 'Ive experienced a noticeable improvement in my online security. The password manager feature keeps my accounts secure.',
+      name: 'Joe Henson',
+      position: 'CEO',
+      company: company1,
+    },
+
   ];
 
   return (
@@ -40,7 +60,7 @@ const CarouselData = () => {
         rightControl={<div className="p-3 text-center items-center bg-gray-700 bg-opacity-60 "><ArrowForwardIosIcon className="text-white 2xl:text-[30px] md:text-[20px]"/> </div>}
         indicators={false}>
         {slides.map((slide, index) => (
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-black text-center">
+            <div id={`${slide.id}`} className="absolute inset-0 flex flex-col justify-center items-center text-black text-center">
               <div className="flex items-center justify-center  xxs:w-1/2 xs:w-1/4 sm:w-1/5 md:w-1/6 mt-4">
                 <Image src={slide.company} alt="logo" height={500}/>
               </div>
